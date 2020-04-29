@@ -1,0 +1,11 @@
+---
+# defaults file for distrobuilder
+
+distrobuilder_cmd: distrobuilder
+distrobuilder_builder: build-lxc
+distrobuilder_image: debian
+distrobuilder_image_tpl: "images/{{ distrobuilder_image }}.yaml"
+distrobuilder_image_release: buster
+tpl_dir: "./"
+rootfs_name: rootfs.tar.xz
+tpl_name: "{{ distrobuilder_image }}_{{ distrobuilder_image_release }}.tar.xz"
